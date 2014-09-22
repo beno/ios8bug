@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00D483519CF6D27008359C1 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D483419CF6D27008359C1 /* CollectionView.m */; };
 		D047318A19CEC24800DF0574 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D047318919CEC24800DF0574 /* main.m */; };
 		D047318D19CEC24800DF0574 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D047318C19CEC24800DF0574 /* AppDelegate.m */; };
 		D047319019CEC24800DF0574 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D047318F19CEC24800DF0574 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		D047319519CEC24800DF0574 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D047319419CEC24800DF0574 /* Images.xcassets */; };
 		D047319819CEC24800DF0574 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D047319619CEC24800DF0574 /* LaunchScreen.xib */; };
 		D04731A419CEC24800DF0574 /* BugTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D04731A319CEC24800DF0574 /* BugTestTests.m */; };
+		D04731AF19CEC3DA00DF0574 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D04731AE19CEC3DA00DF0574 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00D483319CF6D27008359C1 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		D00D483419CF6D27008359C1 /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		D047318419CEC24800DF0574 /* BugTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D047318819CEC24800DF0574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D047318919CEC24800DF0574 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		D047319D19CEC24800DF0574 /* BugTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04731A219CEC24800DF0574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D04731A319CEC24800DF0574 /* BugTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugTestTests.m; sourceTree = "<group>"; };
+		D04731AD19CEC3DA00DF0574 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		D04731AE19CEC3DA00DF0574 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				D047318C19CEC24800DF0574 /* AppDelegate.m */,
 				D047318E19CEC24800DF0574 /* ViewController.h */,
 				D047318F19CEC24800DF0574 /* ViewController.m */,
+				D00D483319CF6D27008359C1 /* CollectionView.h */,
+				D00D483419CF6D27008359C1 /* CollectionView.m */,
+				D04731AD19CEC3DA00DF0574 /* CollectionViewCell.h */,
+				D04731AE19CEC3DA00DF0574 /* CollectionViewCell.m */,
 				D047319119CEC24800DF0574 /* Main.storyboard */,
 				D047319419CEC24800DF0574 /* Images.xcassets */,
 				D047319619CEC24800DF0574 /* LaunchScreen.xib */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00D483519CF6D27008359C1 /* CollectionView.m in Sources */,
 				D047319019CEC24800DF0574 /* ViewController.m in Sources */,
 				D047318D19CEC24800DF0574 /* AppDelegate.m in Sources */,
+				D04731AF19CEC3DA00DF0574 /* CollectionViewCell.m in Sources */,
 				D047318A19CEC24800DF0574 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BugTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BugTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +426,7 @@
 				D04731A919CEC24800DF0574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D04731AA19CEC24800DF0574 /* Build configuration list for PBXNativeTarget "BugTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				D04731AC19CEC24800DF0574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
