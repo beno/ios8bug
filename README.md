@@ -1,7 +1,9 @@
 ios8bug
 =======
 
-Crashing bug in shipping versions of iOS 8. Sample of the logs produced:
+Crashing bug in shipping versions of iOS 8. This is a simple UITabbarController -> UINavigationController -> UIViewController combination with a UICollectionView. Works fine in iOS7, crashes hard in the shipping iOS8. A bug has been filed with Apple but no response so far.
+
+Sample of the log produced:
 
     Thread 1Queue : com.apple.main-thread (serial)
     #0	0x0343d385 in CFHash ()
